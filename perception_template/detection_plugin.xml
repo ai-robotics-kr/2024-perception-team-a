@@ -1,0 +1,7 @@
+<class_libraries>
+  <library path="Detection">
+    <class type="template::TempClass" base_class_type="perception_core::Detectioner">
+      <description></description>
+    </class>
+  </library>
+</class_libraries>

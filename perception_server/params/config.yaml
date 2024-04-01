@@ -1,0 +1,7 @@
+perception_server:
+  ros__parameters:
+    Detection_plugins: ["BEVfusion","YoloV8","3"]
+    BEVfusion:
+      # plugin: "perception_core::detectioner"
+      sources : "lidar"
+      plugin: "template::TempClass"
