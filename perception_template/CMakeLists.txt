@@ -47,7 +47,7 @@ set(dependencies
   nav_msgs
   tf2_ros
   nav2_util
-  perception_core
+
 )
 
 add_library(${library_name} SHARED
