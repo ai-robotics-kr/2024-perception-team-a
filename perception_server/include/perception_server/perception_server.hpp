@@ -38,16 +38,13 @@
 #include "pluginlib/class_loader.hpp"
 #include "pluginlib/class_list_macros.hpp"
 #include "nav2_msgs/srv/is_path_valid.hpp"
+
 #include "perception_core/detectioner.hpp"
 
 
 namespace perception_server
 {
-/**
- * @class perception_server::PerceptionServer
- * @brief An action server implements the behavior tree's ComputePathToPose
- * interface and hosts various plugins of different algorithms to compute plans.
- */
+
 class PerceptionServer : public nav2_util::LifecycleNode
 {
 public:

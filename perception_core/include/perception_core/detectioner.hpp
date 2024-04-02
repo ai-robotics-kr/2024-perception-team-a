@@ -18,7 +18,6 @@ public:
 
   virtual ~Detectioner() {}
 
-
   virtual void configure(
       const rclcpp_lifecycle::LifecycleNode::WeakPtr &,
       std::string name, std::shared_ptr<tf2_ros::Buffer>) = 0;

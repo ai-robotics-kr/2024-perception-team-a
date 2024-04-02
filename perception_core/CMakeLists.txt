@@ -14,7 +14,7 @@ find_package(tf2_ros REQUIRED)
 find_package(nav2_util REQUIRED)
 find_package(nav_msgs REQUIRED)
 
-find_package(rosidl_default_generators REQUIRED)
+# find_package(rosidl_default_generators REQUIRED)
 
 nav2_package()
 
@@ -35,10 +35,10 @@ install(DIRECTORY include/
 )
 
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Object.msg"
-  DEPENDENCIES builtin_interfaces nav_msgs geometry_msgs
-)
+# rosidl_generate_interfaces(${PROJECT_NAME}
+#   "msg/Object.msg"
+#   DEPENDENCIES builtin_interfaces nav_msgs geometry_msgs
+# )
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
